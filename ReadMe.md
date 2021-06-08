@@ -1,4 +1,4 @@
-Project 1: Mining Data Streams 
+<h2>Mining Data Streams through DGIM Algorithm</h2>
 
 This project implements DGIM algorithm using Python. Please download the zipped folder 
 and run the dgim_alg.py file using Python IDE or through Pycharm IDE. 
