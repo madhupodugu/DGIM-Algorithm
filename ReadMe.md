@@ -11,7 +11,9 @@ only one or two buckets of any given size, up to the maximum size.
 
 The dgim_alg.py first takes the input paragraph and converts all letters to their ASCII representation 
 and then their binary form. Once the paragraph has converted to 0/1 stream, the algorithm creates buckets 
-for the first 32 bits in the stream, and when new bit enters, it slides the window (N=32) so that the 
-window contains only 32 bits. For every new bit 1, it creates the bucket with size 1 and merges the other buckets
+for the first 32 bits in the stream. When a new bit enters, it slides the window (N=32) so that the 
+window only contains 32 bits. For every new bit 1, it creates the bucket with size 1 and merges the other buckets
 if any of the buckets sizes appear 3 times. Lastly, after the merge, it estimates the no of 1's by adding all the 
 buckets size and adds the only the half the size of a bucket that overlaps with the window (N=32). 
+
+<h4>NOTE</h4> The input paragraph can be any length and feel free to change or add new input
